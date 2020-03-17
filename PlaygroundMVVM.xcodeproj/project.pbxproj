@@ -20,6 +20,7 @@
 		DF148D6E2419EEF50006DA57 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF148D6D2419EEF50006DA57 /* BaseViewController.swift */; };
 		DF148D702419EFC30006DA57 /* IndexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF148D6F2419EFC20006DA57 /* IndexViewModel.swift */; };
 		DF148D722419F17E0006DA57 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF148D712419F17E0006DA57 /* IndexViewController.swift */; };
+		DF196EFC241F156000A0F0ED /* DataRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF196EFB241F155F00A0F0ED /* DataRequestTests.swift */; };
 		DF7C562F241A1709004A1D58 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7C562E241A1709004A1D58 /* WebService.swift */; };
 		DF7C5632241A1C41004A1D58 /* PhotoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7C5631241A1C41004A1D58 /* PhotoListViewModel.swift */; };
 		DF7C5634241A1FE3004A1D58 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7C5633241A1FE3004A1D58 /* Photo.swift */; };
@@ -36,6 +37,13 @@
 			remoteInfo = PlaygroundMVVM;
 		};
 		DF148D532419E7EF0006DA57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF148D262419E7EC0006DA57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF148D2D2419E7EC0006DA57;
+			remoteInfo = PlaygroundMVVM;
+		};
+		DF196EFE241F156000A0F0ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DF148D262419E7EC0006DA57 /* Project object */;
 			proxyType = 1;
@@ -64,6 +72,9 @@
 		DF148D6D2419EEF50006DA57 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DF148D6F2419EFC20006DA57 /* IndexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewModel.swift; sourceTree = "<group>"; };
 		DF148D712419F17E0006DA57 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
+		DF196EF9241F155F00A0F0ED /* DataRequestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF196EFB241F155F00A0F0ED /* DataRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequestTests.swift; sourceTree = "<group>"; };
+		DF196EFD241F156000A0F0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF7C562E241A1709004A1D58 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		DF7C5631241A1C41004A1D58 /* PhotoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewModel.swift; sourceTree = "<group>"; };
 		DF7C5633241A1FE3004A1D58 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
@@ -96,6 +107,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF196EF6241F155F00A0F0ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -114,6 +132,7 @@
 				DF148D302419E7EC0006DA57 /* PlaygroundMVVM */,
 				DF148D4A2419E7EF0006DA57 /* PlaygroundMVVMTests */,
 				DF148D552419E7EF0006DA57 /* PlaygroundMVVMUITests */,
+				DF196EFA241F155F00A0F0ED /* DataRequestTests */,
 				DF148D2F2419E7EC0006DA57 /* Products */,
 				7AA8F6EA240357EA99BED3F9 /* Pods */,
 				E1BFC34CCD858CF3B1A61F95 /* Frameworks */,
@@ -126,6 +145,7 @@
 				DF148D2E2419E7EC0006DA57 /* PlaygroundMVVM.app */,
 				DF148D472419E7EF0006DA57 /* PlaygroundMVVMTests.xctest */,
 				DF148D522419E7EF0006DA57 /* PlaygroundMVVMUITests.xctest */,
+				DF196EF9241F155F00A0F0ED /* DataRequestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,6 +227,15 @@
 				DF148D712419F17E0006DA57 /* IndexViewController.swift */,
 			);
 			path = Index;
+			sourceTree = "<group>";
+		};
+		DF196EFA241F155F00A0F0ED /* DataRequestTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF196EFB241F155F00A0F0ED /* DataRequestTests.swift */,
+				DF196EFD241F156000A0F0ED /* Info.plist */,
+			);
+			path = DataRequestTests;
 			sourceTree = "<group>";
 		};
 		DF7C562D241A1591004A1D58 /* Utils */ = {
@@ -292,6 +321,24 @@
 			productReference = DF148D522419E7EF0006DA57 /* PlaygroundMVVMUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DF196EF8241F155F00A0F0ED /* DataRequestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF196F02241F156000A0F0ED /* Build configuration list for PBXNativeTarget "DataRequestTests" */;
+			buildPhases = (
+				DF196EF5241F155F00A0F0ED /* Sources */,
+				DF196EF6241F155F00A0F0ED /* Frameworks */,
+				DF196EF7241F155F00A0F0ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF196EFF241F156000A0F0ED /* PBXTargetDependency */,
+			);
+			name = DataRequestTests;
+			productName = DataRequestTests;
+			productReference = DF196EF9241F155F00A0F0ED /* DataRequestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -313,6 +360,10 @@
 						CreatedOnToolsVersion = 11.2.1;
 						TestTargetID = DF148D2D2419E7EC0006DA57;
 					};
+					DF196EF8241F155F00A0F0ED = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = DF148D2D2419E7EC0006DA57;
+					};
 				};
 			};
 			buildConfigurationList = DF148D292419E7EC0006DA57 /* Build configuration list for PBXProject "PlaygroundMVVM" */;
@@ -331,6 +382,7 @@
 				DF148D2D2419E7EC0006DA57 /* PlaygroundMVVM */,
 				DF148D462419E7EF0006DA57 /* PlaygroundMVVMTests */,
 				DF148D512419E7EF0006DA57 /* PlaygroundMVVMUITests */,
+				DF196EF8241F155F00A0F0ED /* DataRequestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -354,6 +406,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DF148D502419E7EF0006DA57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF196EF7241F155F00A0F0ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -423,6 +482,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF196EF5241F155F00A0F0ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF196EFC241F156000A0F0ED /* DataRequestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -435,6 +502,11 @@
 			isa = PBXTargetDependency;
 			target = DF148D2D2419E7EC0006DA57 /* PlaygroundMVVM */;
 			targetProxy = DF148D532419E7EF0006DA57 /* PBXContainerItemProxy */;
+		};
+		DF196EFF241F156000A0F0ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF148D2D2419E7EC0006DA57 /* PlaygroundMVVM */;
+			targetProxy = DF196EFE241F156000A0F0ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -694,6 +766,46 @@
 			};
 			name = Release;
 		};
+		DF196F00241F156000A0F0ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35HBSC4E7B;
+				INFOPLIST_FILE = DataRequestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haohsu.DataRequestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlaygroundMVVM.app/PlaygroundMVVM";
+			};
+			name = Debug;
+		};
+		DF196F01241F156000A0F0ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 35HBSC4E7B;
+				INFOPLIST_FILE = DataRequestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haohsu.DataRequestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlaygroundMVVM.app/PlaygroundMVVM";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -729,6 +841,15 @@
 			buildConfigurations = (
 				DF148D622419E7EF0006DA57 /* Debug */,
 				DF148D632419E7EF0006DA57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF196F02241F156000A0F0ED /* Build configuration list for PBXNativeTarget "DataRequestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF196F00241F156000A0F0ED /* Debug */,
+				DF196F01241F156000A0F0ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

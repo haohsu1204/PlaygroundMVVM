@@ -11,9 +11,9 @@ import Alamofire
 
 class WebService {
     
-    static func get<T>(url: String,requestComplete: @escaping (_ success: Bool, _ message: String?, _ data: T?) -> Void) {
+    static func get<T: Codable>(url: String,requestComplete: @escaping (_ success: Bool, _ message: String?, _ data: T?) -> Void) {
         
-        AF.request(url).responseJSON { response in
+        AF.request(url).responseData { response in
             
             var success: Bool = false
             var message: String? = nil
@@ -21,10 +21,12 @@ class WebService {
             
             switch response.result {
                 
-            case .success(let json):
+            case .success(let result):
                 
                 success = true
-                data = json as? T
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .iso8601
+                data = try? decoder.decode(T.self, from: result)
                 
             case .failure(let error):
                 

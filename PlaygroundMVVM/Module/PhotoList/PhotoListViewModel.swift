@@ -65,7 +65,7 @@ class PhotoListViewModel: BaseViewModel  {
     func fetchPhotoData() {
         
         self.isLoading = true
-        WebService.get(url: apiUrl) { (success: Bool, message: String?, data: [[String : AnyObject]]?) in
+        WebService.get(url: apiUrl) { (success: Bool, message: String?, data: [Photo]?) in
             
             self.isLoading = false
             // handle exception
@@ -77,16 +77,12 @@ class PhotoListViewModel: BaseViewModel  {
         }
     }
     
-    func processPhotoData(data: [[String : AnyObject]]?) {
-        
-        var photos = [PhotoListCellViewModel]()
-        if let _data = data {
-            for dictionary in _data {
-                let photo = Photo(dictionary: dictionary)
-                photos.append(PhotoListCellViewModel(photo: photo))
-            }
+    func processPhotoData(data: [Photo]?) {
+        var photoViewModels = [PhotoListCellViewModel]()
+        if let photos = data {
+            photos.forEach { photoViewModels.append(PhotoListCellViewModel(photo: $0)) }
         }
-        self.photos = photos
+        self.photos = photoViewModels
     }
     
     

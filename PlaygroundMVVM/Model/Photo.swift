@@ -29,24 +29,4 @@ struct Photo: Codable {
         self.thumbnailUrl = nil
     }
     
-    init(dictionary: [String : AnyObject]) {
-        self.init()
-        
-        if let value = dictionary["id"] as? Int {
-            self.id = value
-        }
-        if let value = dictionary["albumId"] as? Int {
-            self.albumId = value
-        }
-        if let value = dictionary["title"] as? String {
-            self.title = value
-        }
-        if let value = dictionary["url"] as? String {
-            self.url = value
-        }
-        if let value = dictionary["thumbnailUrl"] as? String {
-            self.thumbnailUrl = value
-        }
-    }
-    
 }
